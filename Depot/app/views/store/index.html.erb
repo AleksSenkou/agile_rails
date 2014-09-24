@@ -8,8 +8,8 @@
 	<div class="entry">
 		<h3><%= product.title %></h3>
 		<%= image_tag(product.image_url, class: "list_image") %>
-		<p><%= sanitize(product.description) %></p>
-		<span class="price">price: <%= product.price %></span>
+		<p><%= sanitize(product.description) %></p> <!-- insert of <p> befor and after text in function sanitize -->
+		<span class="price"><%= number_to_currency(product.price) %></span>
 		<hr>
 	</div>
 <% end %>

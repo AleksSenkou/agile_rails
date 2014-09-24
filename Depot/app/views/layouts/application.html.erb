@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>	
-  <title>Depot</title>
+  <title>Deport "Books shop"</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class='<%= controller.controller_name %>'>
+	<div id="banner">
+		<%= image_tag("http://media.pragprog.com/titles/rails4/code/rails31/depot_b/app/assets/images/logo.png") %>
+		<%= @page_title || "Pragmatic Bookshelf" %>
+		<%= image_tag("http://media.pragprog.com/titles/rails4/code/rails31/depot_b/app/assets/images/logo.png") %>
+	</div> 
+	<div id="columns">
+		<div id="side">
+			<ul>
+				<li><%= link_to 'Home', store_index_path %></li>
+				<li><%= link_to 'Questions', store_index_path %></li>
+				<li><%= link_to 'News', store_index_path %></li>
+				<li><%= link_to 'Contact', store_index_path %></li>
+			</ul>
+			<p class='time'><%= Time.now %></p>
+		</div>
+		<div id="main">
 
-<%= yield %>
+			<%= yield %>
 
+		</div>
+	</div>
 </body>
 </html>
