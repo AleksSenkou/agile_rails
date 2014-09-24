@@ -1,0 +1,17 @@
+<% if notice %>
+	<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1>Catalog "Best books for you"</h1>
+
+<% @products.each do |product| %>
+	<div class="entry">
+		<h3><%= product.title %></h3>
+		<%= image_tag(product.image_url, class: "list_image") %>
+		<p><%= sanitize(product.description) %></p>
+		<span class="price">price: <%= product.price %></span>
+		<hr>
+	</div>
+<% end %>
+
+
