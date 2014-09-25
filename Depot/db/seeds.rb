@@ -43,3 +43,19 @@ Product.create(:title => 'Rails Test Prescriptions',
       </p>},
   :image_url => 'http://media.pragprog.com/titles/rails4/code/rails31/depot_b/app/assets/images/rtp.jpg',
   :price => 43.75)
+
+Product.create(:title => "Sergey Esenin: 'Poems'",
+  :description => 
+    %{<p>
+        poems
+      </p>},
+  :image_url => 'http://www.blatata.com/uploads/posts/2009-05/1241269171_esenin-sergejj-aleksandrovich-3.10.1895.jpg',
+  :price => 3.75)
+
+Product.create(:title => ' kamasutra new',
+  :description => 
+    %{<p>
+        new position
+      </p>},
+  :image_url => 'http://www.free-ebooks.net/2d_covers/large/1329623379.jpg',
+  :price => 23)
