@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+div.price_line {
+	margin: 0.5em 0px 0.8em 100px;
+	form, div {
+		display: inline;
+	}
+}
+
 .store {
 	text-align: center;
 
